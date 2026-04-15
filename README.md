@@ -6,5 +6,4 @@ Samson, Jorence P.
 Ellis, Denver S.
 Cornel, John lourd
 Course/Section: BSIT 1-12-3
-Projuct Description: "The Project consists of the following, CSS, HTML, most of the uses contains lots of trial and error, but overall the project turned out grest."
-Features Zaplemented: Rulti-Page, Static, UI layout, Control of keyframes, and the designs are neant to appeal to the eyes, dark tone yet not too dark, branded headers.
+Projuct Description: The business sells bicycles, bike parts, and accessories, and offers repair and maintenance services. It currently operates as a physical store with plans to expand online. Main customers include students, families, and bike professionals. The business wants more customers, stronger online presence, easier inquiries and bookings, and online selling. They want a website to promote products and improve customer communication.
