@@ -1,2 +1,3 @@
 # LUNAR-DEVS
-educational purposes only
+# 
+# for educational purposes only
