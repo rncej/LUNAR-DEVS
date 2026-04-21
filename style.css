@@ -254,9 +254,9 @@ img:hover{
     }
 }
 
-@media and screen (max-width: 553px) {
+@media (max-width: 553px) {
     html {
-        font-size: 40.25%;
+        font-size: 50%;
     }
 }
 .footer-links a {
