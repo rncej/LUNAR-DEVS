@@ -1,12 +1,13 @@
 # WBDV111_MidtermLabExam-LUNAR
-A group of students making a project via making a website.
-Group Name: LUNAR\
+A group of students making a project via making a website.\
+
+Group Name: LUNAR
 
 Group Members:\
 Almiñe, Jeff Amiel I.\
 Samson, Jorence P.\
 Ellis, Denver S.\
-Cornel, John Lourd\
+Cornel, John Lourd
 
 Course & Section: BSIT 1-Y2-3\
 
