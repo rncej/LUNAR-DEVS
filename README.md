@@ -2,11 +2,15 @@
 A group of students making a project via making a website.
   GROM A MERSITE!
 #
-Group:
+Group Members:
 Almiñe, Jeff Amiel I.
+#
 Samson, Jorence P.
+#
 Ellis, Denver S.
+#
 Cornel, John lourd
+#
 #
 Course/Section: BSIT 1-Y2-3
 #
