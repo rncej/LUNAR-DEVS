@@ -472,7 +472,7 @@ img:hover{
     top: 100px;
     right: 0;
     width: 100%;
-    background: #111;
+    background: #fff;
     flex-direction: column;
     align-items: center;
     gap: 20px;
