@@ -465,6 +465,7 @@ img:hover{
 
     .menu-toggle{
         display: block;
+        color: #000;
     }
 
     .nav-links {
@@ -572,6 +573,11 @@ body.dark-mode .navbar {
 body.dark-mode .nav-links.active {
     background-color: #fff;
 }
+
+ body.dark-mode .menu-toggle{
+    color: #000;
+ }
+
 
 /* CARDS */
 body.dark-mode .bike-card {
