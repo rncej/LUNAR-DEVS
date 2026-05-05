@@ -569,7 +569,9 @@ body.dark-mode .navbar {
 }
 
 /* DROP-DOWN MENU */
-
+body.dark-mode .nav-links.active {
+    background-color: #fff;
+}
 
 /* CARDS */
 body.dark-mode .bike-card {
