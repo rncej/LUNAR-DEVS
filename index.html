@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARON BIKES</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="index.html" class="logo"><span class="highlight">ARON BIKES</span></a>
+        <div class="nav-logo">
+        <a href="index.html" class="logo"><img class="aron-logo"src="images/logo.png" alt="aron bikes logo"><span class="highlight">ARON BIKES</span></a>
+        </div> 
         <button class="menu-toggle">☰</button>
         <ul class="nav-links">
             <li><a class="navborder" href="bikes.html">BIKES</a></li>
@@ -37,14 +39,23 @@
             <h1 class="feature-heading">Features</h1>
             <div class="features-container">
                 <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
                     <h3>High Performance</h3>
                     <p>Engineered for maximum speed and efficiency</p>
                 </div>
                 <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
                     <h3>Expert Service</h3>
                     <p>Professional maintenance and custom builds</p>
                 </div>
                 <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
                     <h3>Premium Quality</h3>
                     <p>Top-tier components and materials</p>
                 </div>
@@ -55,21 +66,21 @@
         <section id="bikes">
             <div class="bike-features">
                 <h2 class="showcase-heading">Featured Bikes</h2>
-                <div class="bike-grid">
+                <div class="bike-flex">
                     <div class="bike-card">
-                        <div class="bike-img "></div>
-                        <h4>Road Master</h4>
-                        <p class="price">₱2,499</p>
+                        <img class="bike-img" src="images/mtb1.jpeg" alt="MTB">
+                        <h4>Mountain Bike</h4>
+                        <p class="price">₱10,599 - ₱14,399</p>
                     </div>
                     <div class="bike-card">
-                        <div class="bike-img"></div>
-                        <h4>Trail Blazer</h4>
-                        <p class="price">₱3,299</p>
+                        <img class="bike-img" src="images/rb1.jpg" alt="Road">
+                        <h4>Road Bike</h4>
+                        <p class="price">₱6,099 - ₱12,299</p>
                     </div>
                     <div class="bike-card">
-                        <div class="bike-img "></div>
-                        <h4>Urban Cruiser</h4>
-                        <p class="price">₱1,899</p>
+                        <img class="bike-img" src="images/kiddie1.jpg" alt="Kiddie">
+                        <h4>Kiddie Bike</h4>
+                        <p class="price">₱1,599 - ₱2,299</p>
                     </div>
                 </div>
             </div>
@@ -78,27 +89,34 @@
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="cta-container">
-                <h2 class="cta-heading">Ready to <span class="highlight">Ride</span>?</h2>
-                <p class="cta-paragraph">Visit our bikes page or book a test ride today</p>
-                <a href="bikes.html" class="btn cta-btn glow-btn">Get Started</a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="footer-container">
-                <div class="footer-brand">
-                    <h3 class="footer-heading">ARO<span class="highlight">N</span> BIKES</h3>
-                    <p class="footer-establish">Premium cycling since 2026</p>
-                    </div>
-                <div class="footer-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Support</a>
+                <h2 class="cta-heading">Ready to <span class="highlight">Ride?</span></h2>
+                <p class="cta-paragraph">Visit our bikes page or contact us for more information</p>
+                <div class="cta-btns">
+                <a href="bikes.html" class="btn cta-btn">Visit Bikes</a>
+                <a href="contact.html" class="btn cta-btn">Contact Us</a>
                 </div>
             </div>
-            <p class="copyright ">&copy; 2026 ARONN BIKES. All rights reserved.</p>
-        </footer>
+        </section>
     </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-heading">ARO<span class="highlight">N</span> BIKES</h3>
+                <p class="footer-establish">Premium cycling since 2015</p>
+                </div>
+            <div class="footer-links">
+                <a href="bikes.html">Bikes</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div>
+                <a class="bottom-top-btn" href="#">Back to Top</a>
+            </div>
+            </div>
+            <p class="copyright ">&copy; 2015 ARONN BIKES. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
