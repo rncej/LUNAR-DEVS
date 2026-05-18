@@ -3,53 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARON BIKES - Premium Cycling Experience</title>
+    <title>ARON BIKES</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation --> 
      <nav class="navbar">
-        <a href="index.html" class="logo"><span class="highlight">ARON BIKES</span></a>
-         <button class="menu-toggle">☰</button>
-         <ul class="nav-links">
+        <div class="nav-logo">
+        <a href="index.html" class="logo"><img class="aron-logo"src="images/logo.png" alt="aron bikes logo"><span class="highlight">ARON BIKES</span></a>
+        </div> 
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
             <li><a class="navborder" href="bikes.html">BIKES</a></li>
             <li><a class="navborder" href="about.html">ABOUT</a></li>
             <li><a class="navborder" href="services.html">SERVICES</a></li>
             <li><a class="navborder" href="contact.html">CONTACT</a></li>
-            <li><button class="theme-btn glow-btn" type="button">🌙</button></li>
+           <button class="theme-btn glow-btn">🌙</button>
         </ul>
     </nav> 
     <div class="container"> 
         <div class="services-container">
-            <h1>Bike Shop Services</h1>
-            <ul>
-            <p>contacts us for more details</pp>
-            </ul>
+            <h1>Bike Services</h1>
         </div>
-        <!-- Footer -->
-        <footer>
-        <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>ARO<span class="highlight">N</span> BIKES</h3>
-                <p>Premium cycling since 2015</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                <h3>Bike Repair</h3>
+                <p>Brake adjustment, gear tuning, chain replacement, and cable replacement</p>
             </div>
-
-            <div class="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Support</a>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-circle-dot"></i></div>
+                <h3>Tire & Wheel Service</h3>
+                <p>Tire and wheel replacement, alignment, and air inflation</p>
             </div>
-
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-gear"></i></div>
+                <h3>Regular Tune-Up</h3>
+                <p>Bike tune-ups, lubrication, and safety checks</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                <h3>Custom Builds</h3>
+                <p>Build a bike from scratch with component upgrades and assembly</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bicycle"></i></div>
+                <h3>Bike Assembly</h3>
+                <p>Assembly for newly purchased bikes with full testing before handover</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-tag"></i></div>
+                <h3>Parts & Accessories</h3>
+                <p>Wide selection of parts and accessories in store.</p>
+            </div>
         </div>
-
-        <p class="copyright">
-            &copy; 2026 ARONN BIKES. All rights reserved.
-        </p>
-
     </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-heading">ARO<span class="highlight">N</span> BIKES</h3>
+                <p class="footer-establish">Premium cycling since 2015</p>
+                </div>
+                <div class="footer-links">
+                <a href="bikes.html">Bikes</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <a href="#">Back to Top</a>
+                </div>
+            </div> 
+        </div>
+        <p class="copyright ">&copy; 2015 ARONN BIKES. All rights reserved.</p>
+    </footer>
 </body>
 </html>
