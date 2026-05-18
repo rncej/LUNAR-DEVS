@@ -3,74 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARON BIKES - Premium Cycling Experience</title>
+    <title>ARON BIKES</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation --> 
      <nav class="navbar">
-        <a href="index.html" class="logo"><span class="highlight">ARON BIKES</span></a>
+        <div class="nav-logo">
+        <a href="index.html" class="logo"><img class="aron-logo"src="images/logo.png" alt="aron bikes logo"><span class="highlight">ARON BIKES</span></a>
+        </div> 
         <button class="menu-toggle">☰</button>
         <ul class="nav-links">
             <li><a class="navborder" href="bikes.html">BIKES</a></li>
             <li><a class="navborder" href="about.html">ABOUT</a></li>
             <li><a class="navborder" href="services.html">SERVICES</a></li>
             <li><a class="navborder" href="contact.html">CONTACT</a></li>
-            <li><button class="theme-btn glow-btn" type="button">🌙</button></li>
+           <button class="theme-btn glow-btn">🌙</button>
         </ul>
     </nav> 
     <div class="container">
-        <div class="bikes-container">
-            <h1 class="bike-heading">Bike Showcase</h1>
-            <h2>ROAD Bikes</h2>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt=""></li>
-            <li><img class="bikeimage"src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt=""></li>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHwwx" alt=""></li>
-        </div>
-         <div class="container">
-        <div class="bikes-container">
-            <h1>MOUNTAIN Bikes</h1>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt=""></li>
-            <li><img class="bikeimage"src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt=""></li>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHwwx" alt=""></li>
-        </div>
-        <div class="bikes-container">
-            <h1>KIDDIE Bikes</h1>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt="basta bike"></li>
-            <li><img class="bikeimage"src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt="bike"></li>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHwwx" alt="tite"></li>
-        </div>
-        <div class="bikes-container">
-            <h1>BIKE PARTS</h1>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt=""></li>
-            <li><img class="bikeimage"src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHww" alt=""></li>
-            <li><img class="bikeimage" src="https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW90b3JiaWtlfGVufDB8fDB8fHwwx" alt=""></li>
-        </div>
-    
-        <!-- Footer -->
-        <footer>
-        <div class="footer-container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>ARO<span class="highlight">N</span> BIKES</h3>
-                <p>Premium cycling since 2015</p>
+    <h1 class="bike-heading">Our Bikes</h1>
+    <div class="bike-section">
+        <h2 class="bike-category-heading">Road Bikes</h2>
+        <div class="bike-grid">
+            <div class="bike-card">
+                <img class="bikeimage" src="images/rb3.jpg" alt="Road Bike 3">
+                <div class="bike-info">
+                    <h4>Booster <br> BST-IN <br> Black Purple</h4>
+                    <p class="price">₱10,599</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
             </div>
-
-            <div class="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Support</a>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/rb1.jpg" alt="Road Bike 1">
+                <div class="bike-info">
+                    <h4>Foxter 700C <br> FR-402 <br> Bright Orange</h4>
+                    <p class="price">₱12,799</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
             </div>
-
+            <div class="bike-card">
+                <img class="bikeimage" src="images/rb2.jpg" alt="Road Bike 2">
+                <div class="bike-info">
+                    <h4>Foxter 700C <br> FR-402 <br> Rocket Red</h4>
+                    <p class="price">₱13,599</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/rb4.jpg" alt="Road Bike 3">
+                <div class="bike-info">
+                    <h4>Booster <br> BST-016 <br> Slate</h4>
+                    <p class="price">₱14,399</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
         </div>
-
-        <p class="copyright">
-            &copy; 2026 ARONN BIKES. All rights reserved.
-        </p>
-
     </div>
-</footer>
+    <div class="bike-section">
+        <h2 class="bike-category-heading">Mountain Bikes</h2>
+        <div class="bike-grid">
+            <div class="bike-card">
+                <img class="bikeimage" src="images/mtb4.jpeg" alt="Mountain Bike 3">
+                <div class="bike-info">
+                    <h4>Sushida <br> MTB XA1000 <br> Black Orange</h4>
+                    <p class="price">₱6,099</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/mtb5.jpg" alt="Mountain Bike 3">
+                <div class="bike-info">
+                    <h4>Sushida <br> MTB XA1000 <br> Black Blue</h4>
+                    <p class="price">₱6,399</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/mtb1.jpeg" alt="Mountain Bike 1">
+                <div class="bike-info">
+                    <h4>Foxter <br> MTB 29er <br> Slate</h4>
+                    <p class="price">₱10,999</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/mtb2.jpeg" alt="Mountain Bike 2">
+                <div class="bike-info">
+                    <h4>Foxter <br> MTB 29er <br> Dark Gray</h4>
+                    <p class="price">₱11,599</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/mtb3.jpeg" alt="Mountain Bike 3">
+                <div class="bike-info">
+                    <h4>Foxter <br> MTB 27.5er <br> Gold</h4>
+                    <p class="price">₱12,299</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bike-section">
+        <h2 class="bike-category-heading">Kiddie Bikes</h2>
+        <div class="bike-grid">
+            <div class="bike-card">
+                <img class="bikeimage" src="images/kiddie1.jpg" alt="Kiddie Bike 1">
+                <div class="bike-info">
+                    <h4>Star Trooper <br> Kids 16" <br> Black Blue</h4>
+                    <p class="price">₱1,599</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/kiddie2.jpg" alt="Kiddie Bike 2">
+                <div class="bike-info">
+                    <h4>Star Trooper <br> Kids 16" <br> Black Red</h4>
+                    <p class="price">₱1,799</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/kiddie3.jpg" alt="Kiddie Bike 3">
+                <div class="bike-info">
+                    <h4>XING-JQI <br> Kids 16" <br> Light Pink</h4>
+                    <p class="price">₱1,999</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/kiddie4.jpg" alt="Kiddie Bike 4">
+                <div class="bike-info">
+                    <h4>Keith <br> Kids 16" <br> Grape</h4>
+                    <p class="price">₱2,099</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+            <div class="bike-card">
+                <img class="bikeimage" src="images/kiddie5.jpg" alt="Kiddie Bike 4">
+                <div class="bike-info">
+                    <h4>Keith <br> Kids 16" <br> Hot Pink</h4>
+                    <p class="price">₱2,299</p>
+                    <a href="contact.html" class="btn bike-inquiry-btn">Inquire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-heading">ARO<span class="highlight">N</span> BIKES</h3>
+                <p class="footer-establish">Premium cycling since 2015</p>
+                </div>
+                <div class="footer-links">
+                <a href="bikes.html">Bikes</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <a href="#">Back to Top</a>
+                </div>
+            </div> 
+        </div>
+        <p class="copyright ">&copy; 2015 ARONN BIKES. All rights reserved.</p>
+    </footer>
 </body>
 </html>
