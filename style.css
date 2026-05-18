@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +56,14 @@ p {
 }
 
 /*---------- NAVIGATION BAR ----------*/
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.aron-logo {
+    vertical-align: middle;
+}
 
 .navbar {
     height: 100px;
@@ -83,16 +92,15 @@ p {
     gap: 20px;
 }
 
-.navborder {
-    border: 2px solid #cc5200;
-    padding: 5px 10px;
-    margin: 10px 20px;
+.navborder:hover {
+    border-bottom: 2px solid #cc5200;
+    padding: 5px 0px;
 }
 
 /* ---------- HERO SECTION ----------*/
 
 .hero-container {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     min-height: 300px;
     max-width: 100%;
@@ -108,7 +116,7 @@ p {
 }
 
 .hero-img {
-    background-image: url("images/bike1.png");
+    background-image: url("images/herobike.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -131,12 +139,11 @@ p {
     font-size: 16px;
     padding: 15px 30px;
     background-color: #d15401cc;
-    color: #fff;
     border-radius: 15px;
 }
 
 .highlight {
-    color: #c13a00;
+    color: #ff4d00;
 }
 
 .hero-btn:visited, .hero-btn:link {
@@ -159,6 +166,13 @@ p {
     border-radius: 15px;
 }
 
+.cta-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 .cta-btn:visited, .cta-btn:link {
     color: #fff;
     background-color: #ff6600;
@@ -168,6 +182,7 @@ p {
     color: #fff;
     background-color: #732e00;
     transform: scale(1.05);
+    transition: 0.3s;
 }
 
 .cta-heading {
@@ -195,7 +210,7 @@ p {
     gap: 20px;
 }
 
-.features-card {
+.feature-card {
     display: inline-block;
     width: 250px;
     margin: 15px;
@@ -203,16 +218,53 @@ p {
     background: #181818;
     border-radius: 15px;
     transition: 0.3s;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    color: #ff6600;
+    margin-bottom: 15px;
 }
 
 .bike-features {
     margin-bottom: 200px;
 }
 
+.bikes-container {
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 100px;
+}
+
 .bike-img {
-    max-width: 300px;
-    height: 300px;
-    width: 90%;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+.bike-flex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bike-card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.bike-card:hover {
+    transform: scale(1.05);
 }
 
 .showcase-heading {
@@ -231,15 +283,16 @@ footer {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
+    gap: 15px;
 }
 
 .footer-heading {
     font-size: 22px;
     margin: 0;
     font-weight: bold;
+    text-align: center;
 }
 
 .footer-establish {
@@ -250,6 +303,7 @@ footer {
 .footer-links {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -267,7 +321,6 @@ footer {
     margin-top: 20px;
     font-size: 13px;
     border-top: 1px solid #333;
-    color: #fff;
     padding-top: 15px;
 }
 
@@ -299,48 +352,81 @@ footer {
     width: 100%;
 }
 
+.bottom-top-btn {
+    color: #fff;
+}
+
 /* NAVIGATION LINK STYLES (BIKES TO CONTACT) */
 
-img:hover{
-    transform: scale(1.50);
+.bike-heading {
+    padding: 40px 0 20px;
 }
 
-.bikes-container {
-    height: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 100px;
+.bike-section {
+    margin-bottom: 60px;
 }
 
-.bikeimage {
-    width: 400px;
-    height: 200px;
-    transition: 0.3s ease;
+.bike-category-heading {
+    font-size: 2.4rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff6600;
+    padding-left: 12px;
 }
 
-.bike-grid{
-    display: flex;
-    justify-content: center;
+.bike-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .bike-card {
     background: #1c1c1c;
-    padding: 20px;
     border-radius: 15px;
-    width: 250px;
+    overflow: hidden;
+    transition: 0.3s ease;
     text-align: center;
 }
 
 .bike-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .bikeimage {
-    max-width: 400px;
-    width: 90%;
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.bike-info {
+    padding: 15px;
+}
+
+.bike-info h4 {
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #ff6600;
+    font-size: 1.6rem;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bike-inquiry-btn {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 8px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.bike-inquiry-btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
 }
 
 .about-container {
@@ -352,12 +438,51 @@ img:hover{
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.2;
-    margin: 10px 0px;
+    padding: 20px;
 }
 
 .about-description {
     letter-spacing: 2px;
     line-height: 1.2;
+}
+
+.services-container {
+    padding: 60px 0;
+}
+
+.services-heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services-subheading {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background: #1c1c1c;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.03);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #ff6600;
+    margin-bottom: 15px;
 }
 
 .contact-container {
@@ -368,7 +493,7 @@ img:hover{
 .contact-heading {    
     font-weight: 700;
     font-size: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .contacts {
@@ -433,7 +558,7 @@ img:hover{
     display: none;
     }
 
-    .nav-links .active {
+    .nav-links.active {
     display: flex;
     }
 
@@ -450,6 +575,19 @@ img:hover{
 
 }
 
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 490px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* PHONE SCREEN */
 @media (max-width: 490px) {     
     html {
@@ -465,7 +603,7 @@ img:hover{
     }
 
     .menu-toggle{
-        color: #000;
+        display: block;
     }
 
     .nav-links {
@@ -473,10 +611,9 @@ img:hover{
     top: 100px;
     right: 0;
     width: 100%;
-    background-color: #111;
+    background: #111;
     flex-direction: column;
     align-items: center;
-    color: #fff;
     gap: 20px;
     padding: 20px 0;
     display: none;
@@ -566,28 +703,23 @@ body.dark-mode {
 
 /* NAVBAR */
 body.dark-mode .navbar {
-    background: #f5f5f5;
+    background-color: #f5f5f5;
 }
-
-/* DROP-DOWN MENU */
-body.dark-mode .nav-links.active {
-    background-color: #fff;
-}
-
- body.dark-mode .menu-toggle{
-    color: #000;
- }
-
 
 /* CARDS */
 body.dark-mode .bike-card {
-    background: #eaeaea;
+    background-color: #eaeaea;
+    color: #000;
+}
+
+body.dark-mode .feature-card {
+    background-color: #eaeaea;
     color: #000;
 }
 
 /* CTA SECTION */
 body.dark-mode .cta-section {
-    background: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 /* LINKS */
@@ -597,6 +729,6 @@ body.dark-mode a {
 
 /* FOOTER */
 body.dark-mode footer {
-    background: #ddd;
+    background-color: #ddd;
     color: #000;
 }
